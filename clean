@@ -1,5 +1,5 @@
-docker rm -f amc-con
+docker rm -f amc-arch-con
 
 docker volume prune
 
-docker rmi amc-img
+docker rmi amc-arch-img

@@ -1,8 +1,8 @@
 FROM node:alpine3.17
 
-WORKDIR /amazemfgco
+WORKDIR /amazemfgco-arch
 
-COPY package.json /amazemfgco/
+COPY package.json /amazemfgco-arch/
 
 RUN npm install
 

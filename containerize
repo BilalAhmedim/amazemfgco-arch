@@ -1,3 +1,3 @@
-docker build -t amc-img .
+docker build -t amc-arch-img .
 
-docker run -p 3000:8080 --name amc-con -it -v /amazemfgco/node_modules -v "/home/dev/amazemfgco:/amazemfgco" amc-img 
+docker run -p 2000:8080 --name amc-arch-con -it -v /amazemfgco-arch/node_modules -v "/home/dev/amazemfgco-arch:/amazemfgco-arch" amc-arch-img 
