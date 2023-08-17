@@ -1,92 +1,281 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="autumn">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./output.css">
-  <title>Document</title>
-</head>
-<body>
-  
-  <nav class="drawer drawer-end">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
-    <div class="drawer-content flex flex-col">
-      
-      <!-- Navbar -->
-      <div class="w-full navbar bg-base-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="drawer drawer-end">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="w-full navbar bg-base-200">
+          <div class="flex-1 px-2 mx-2">Navbar Title</div>
+          <div class="flex-none lg:hidden">
+            <label for="my-drawer-3" class="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+          </div>
 
-        <div class="flex-1 px-2 mx-2">Navbar Title</div>
-        <div class="flex-none lg:hidden ">
-          <label for="my-drawer-3" class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-          </label>
-        </div> 
-        
-        
+          <div class="flex-none hidden lg:block">
+            <ul class="menu menu-horizontal">
+              <!-- Navbar menu content here -->
+              <li><a>Navbar Item 1</a></li>
+              <li><a>Navbar Item 2</a></li>
+            </ul>
+          </div>
+        </div>
 
-        <div class="flex-none hidden lg:block">
-          <ul class="menu menu-horizontal">
-            <!-- Navbar menu content here -->
-            <li><a>Navbar Item 1</a></li>
-            <li><a>Navbar Item 2</a></li>
-          </ul>
+        <!-- Page content here -->
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer-3" class="drawer-overlay"></label>
+        <ul class="menu p-4 w-80 h-full bg-base-100">
+          <!-- Sidebar content here -->
+          <li><a>Sidebar Item 1</a></li>
+          <li><a>Sidebar Item 2</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Slider -->
+
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://ramsintl.com/wp-content/themes/ramsintl/assets/Slider/sink.jpg"
+          class="w-full"
+        />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://ramsintl.com/wp-content/themes/ramsintl/assets/Slider/tub.jpg"
+          class="w-full"
+        />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://ramsintl.com/wp-content/themes/ramsintl/assets/Slider/3.jpg"
+          class="w-full"
+        />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
 
-      <!-- Page content here -->
-    </div> 
-    <div class="drawer-side">
-      <label for="my-drawer-3" class="drawer-overlay"></label> 
-      <ul class="menu p-4 w-80 h-full bg-base-100">
-        <!-- Sidebar content here -->
-        <li><a>Sidebar Item 1</a></li>
-        <li><a>Sidebar Item 2</a></li>
+    <!-- End Slider -->
+
+    <!-- About -->
+
+    <section class="about">
+      <header class="header">
+        <h1 class="h1">About Amaze</h1>
+      </header>
+
+      <div class="container">
+        <p class="align-content-center">
+          "we are amaze manufacturing company, a different style, metal
+          handicrafts manufacturers and exporters copper,brass & stainless steel
+          – bathtubs, kitchen & bathroom sinks, bar sinks, commercial sinks,
+          counter tops,hoods, swings chairs, rain chains, house gate, windos,
+          urinals basins, and shower tarys etc. we are located in moradabad city
+          which is world famous for its brass work. our company has been
+          established in 2016, amaze mfg. co. has the vast experience and
+          talented team to handle any challenging jobs in handicrafts sector.
+          being a well-established company we have full in house production
+          facility and capability to handle any customized development or oem at
+          customer demand in any metal like copper, brass, aluminum, iron, ss
+          etc."
+        </p>
+        <center>
+          <button class="btn btn-accent">Learn More.</button>
+        </center>
+      </div>
+    </section>
+
+    <section class="gallery gallery-featured">
+      <div class="container">
+        <header class="header">
+          <h1>Featured Products</h1>
+        </header>
+
+        <div class="gallery-inner">
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <header class="header">
+          <h1>Products Gallery</h1>
+        </header>
+
+        <div class="gallery-inner">
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+
+          <figure class="gallery-card">
+            <a href="">
+              <img src="./static/image.jpg" alt="" />
+              <figcaption>Product N</figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li><h2>Primary Pages</h2></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Conatact</a></li>
       </ul>
-      
-    </div>
-  </nav>
-  <!-- End Nav -->
 
-  <!-- Slider -->
+      <ul>
+        <li><h2>Featured Products</h2></li>
+        <li><a href="#">Baths</a></li>
+        <li><a href="#">Sinks</a></li>
+        <li><a href="#">Hoods</a></li>
+      </ul>
 
-  <div class="carousel w-full">
-    <div id="slide1" class="carousel-item relative w-full">
-      <img src="https://ramsintl.com/wp-content/themes/ramsintl/assets/Slider/sink.jpg" class="w-full" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide4" class="btn btn-circle">❮</a> 
-        <a href="#slide2" class="btn btn-circle">❯</a>
-      </div>
-    </div> 
-    <div id="slide2" class="carousel-item relative w-full">
-      <img src="https://ramsintl.com/wp-content/themes/ramsintl/assets/Slider/tub.jpg" class="w-full" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide1" class="btn btn-circle">❮</a> 
-        <a href="#slide3" class="btn btn-circle">❯</a>
-      </div>
-    </div> 
-    <div id="slide3" class="carousel-item relative w-full">
-      <img src="https://ramsintl.com/wp-content/themes/ramsintl/assets/Slider/3.jpg" class="w-full" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide2" class="btn btn-circle">❮</a> 
-        <a href="#slide1" class="btn btn-circle">❯</a>
-      </div>
-    </div> 
+      <ul>
+        <li><h2>Products</h2></li>
+        <li><a href="#">Baths</a></li>
+        <li><a href="#">Sinks</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
 
-  </div>
-
-  <!-- End Slider -->
-
-  <!-- About -->
-
-  <div class="about">
-    <div class="header">
-      <h1 class="h1">About Amaze</h1>
-    </div>
-    <p class="container mx-auto px-9">"We are Amaze Manufacturing Company, a different style, Metal Handicrafts Manufacturers and Exporters COPPER,BRASS & STAINLESS STEEL – BATHTUBS, KITCHEN & BATHROOM SINKS, BAR SINKS, COMMERCIAL SINKS, COUNTER TOPS,HOODS, SWINGS CHAIRS, RAIN CHAINS, HOUSE GATE, WINDOS, URINALS BASINS, AND SHOWER TARYS ETC. We are located in Moradabad City which is world famous for its BRASS WORK. Our company has been Established in 2016, AMAZE MFG. CO. HAS THE vast experience and talented team to handle any challenging jobs in Handicrafts sector. Being a well-established company we have full in house production facility and capability to handle any Customized development or OEM at customer demand in any metal like Copper, Brass, Aluminum, Iron, SS etc."</p>
-  </div>
-
-
-
-  
-</body>
+      <ul class="social">
+        <li>
+          <a href="https://www.linkedin.com/in/abdullah-parvez-2b80a31a0"
+            ><img width="64px" src="/static/lin.png" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=100086518425003&mibextid=ZbWKwL"
+            ><img width="64px" src="/static/fb.png" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="
+            ><img width="64px" src="/static/insta.png" class="icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
